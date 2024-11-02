@@ -1,0 +1,31 @@
+.explore-menu{
+    margin-top: 5%;
+ }
+ .explore-menu h1{
+    margin-bottom: 1%;
+    font-size: 2em;
+ }
+.menu-list{
+    margin-top: 2%;
+    list-style: none;
+    display: flex;
+    column-gap:15px;
+    row-gap: 40px;
+    flex-wrap: wrap;
+    text-align: center;
+ }
+ .menu-list li{
+    width: 24%;
+ }
+ .menu-list img{
+    border: 5px solid #ffffff;
+    border-radius: 50pc;
+    padding: 2px;
+    cursor: pointer;
+ }
+ .menu-list .active{
+    border-color: var(--primary-color);
+    border-radius: 50pc;
+    padding: 2px;
+    
+ }

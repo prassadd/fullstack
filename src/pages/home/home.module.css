@@ -1,0 +1,47 @@
+.home-section{
+    font-size: 16px;
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.hero-section{
+    background-image: url('../../assets/frontend_assets/header_img.png');
+    background-repeat: no-repeat;
+    height: 650px;
+    color: white;
+    padding: 20% 5% 5% 5%;
+    border-radius: 2%;
+    animation: fadeIn 2s;
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.hero-content{
+    width: 50%;
+}
+.hero-content h1{
+    font-size: 2.6em;
+}
+.hero-content p{
+   padding: 5% 0;
+ }
+.hero-content button.view-menu{
+    height: 35px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    a{
+        text-decoration: none;
+    }
+ }
+
+

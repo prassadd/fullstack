@@ -1,0 +1,135 @@
+header{
+    font-size: 16px;
+    max-width: 1190px;
+    margin: 20px auto;
+}
+.header-section{
+    font-size: 18px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+    align-items: center;
+}
+.nav-div{
+    flex: 1;
+}
+.nav-list-bg{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 2%;
+    margin: 0;
+    justify-content: center;
+}
+.side-bar{
+    align-items: center;
+    display: flex;
+}
+.side-bar span{
+    display: flex;
+}
+.side-bar .search,.side-bar :nth-child(2){
+    margin-right: 10px;
+}
+svg{
+    font-size: 20px;
+}
+.user{
+    align-items: baseline;
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid var(--primary-color);
+    padding: 5px;
+    cursor: pointer;
+}
+.hamb{
+    display: none!important;
+}
+.nav-list-sm{
+    display: none;
+}
+a{
+    color: unset;
+    text-decoration: none;
+}
+a {
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 4px;
+    background-color: black; /* Customize the color */
+    bottom: 0;
+    left: 25%;
+    transition: width 0.3s ease-in-out; /* Smooth transition */
+}
+
+a.active::after,a:hover::after {
+    width: 50%; /* On hover, the underline expands to full width */
+    
+}
+.nav-profile-dropdown{
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+.navbar-profile:hover .nav-profile-dropdown{
+display: flex;
+flex-direction: column;
+gap: 10px;
+background-color: #fff2ef;
+pad: 12px 25px;
+list-style: none;
+}
+@media only screen and (max-width:400px){
+    .user-text{
+        display: none!important;
+    }
+    .user{
+        border: none;
+    }
+    .side-bar .search,.side-bar :nth-child(2),.side-bar :nth-child(3){
+        margin-right: 5px!important;
+    }
+    .logo{
+        height: 40%!important;
+    }
+    svg{
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width:850px){
+    .nav-list-bg{
+        display: none;
+    }
+    .hamb{
+        display: block!important;
+    }
+    .nav-div{
+        background: antiquewhite;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+    }
+    .nav-list-sm{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .side-bar{
+        width: unset;
+        gap:unset;
+    }
+    .side-bar .search,.side-bar :nth-child(2),.side-bar :nth-child(3){
+        margin-right: 10px;
+    }
+}
